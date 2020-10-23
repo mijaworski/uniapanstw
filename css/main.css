@@ -1,1 +1,339 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1d4e85;
+}
+
+body h4 {
+  font-size: 34px;
+}
+
+#parent {
+  position: relative;
+  z-index: 0;
+}
+
+header {
+  background-color: #c93d3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75px;
+  vertical-align: middle;
+  padding: 20px;
+}
+
+header .burger img {
+  position: absolute;
+  left: 0;
+  margin-left: 52px;
+}
+
+header h3 {
+  color: #f2efea;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .user img {
+  position: absolute;
+  right: 0;
+  margin-right: 52px;
+}
+
+.hero-banner {
+  height: 635px;
+  background-image: url(../img/background_welcome.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Optional. only if you want the items to wrap */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* For horizontal alignment */
+  width: 100%;
+}
+
+.hero-banner .hero {
+  color: #f2efea;
+  padding: 10%;
+}
+
+.hero-banner .hero h1 {
+  font-size: 78px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.hero-banner .hero p {
+  font-size: 24px;
+}
+
+.main {
+  height: 3468px;
+  background-color: #f2efea;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 2fr 1fr 2fr 1fr 4fr 4fr 3fr 6fr;
+      grid-template-rows: 2fr 1fr 2fr 1fr 4fr 4fr 3fr 6fr;
+      grid-template-areas: "arbig arbig armid armid" "arbig arbig armid armid" "arbig arbig arsmlft arsmrght" "arbig arbig arsmlft arsmrght" "prasa prasa inst inst" "forum forum forum forum" "unia unia unia unia" "czat czat czat czat";
+}
+
+.main .article_big {
+  background: pink;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: arbig;
+  position: relative;
+}
+
+.main .article_big img {
+  height: 789px;
+  width: 100%;
+}
+
+.main .article_big h6,
+.main .article_big h4 {
+  margin-left: 5%;
+  padding-top: 2%;
+}
+
+.main .article_medium {
+  background: red;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: armid;
+  position: relative;
+}
+
+.main .article_medium img {
+  height: 335px;
+  width: 100%;
+}
+
+.main .article_medium h6,
+.main .article_medium h4 {
+  margin-left: 5%;
+  padding-top: 2%;
+}
+
+.main .article_small_left {
+  background: blue;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: arsmlft;
+  position: relative;
+}
+
+.main .article_small_left img {
+  height: 337px;
+  width: 100%;
+}
+
+.main .article_small_left h6,
+.main .article_small_left h4 {
+  margin-left: 5%;
+  padding-top: 4%;
+}
+
+.main .article_small_right {
+  background: blueviolet;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: arsmrght;
+  position: relative;
+}
+
+.main .article_small_right img {
+  height: 337px;
+  width: 100%;
+}
+
+.main .article_small_right h6,
+.main .article_small_right h4 {
+  margin-left: 5%;
+  padding-top: 4%;
+}
+
+.main h6 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.main h4 {
+  font-weight: 500;
+}
+
+.main .opis {
+  height: 116px;
+  background-color: #c93d3f;
+  color: #f2efea;
+}
+
+.main .prasa {
+  background: #f2efea;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: prasa;
+  margin-left: 5%;
+  color: #1d4e85;
+  margin-top: 5%;
+  display: flow-root;
+}
+
+.main .prasa .rounded {
+  border-top: solid #1d4e85;
+}
+
+.main .prasa .prasa_feed {
+  width: 95%;
+  height: 80%;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 10px 2px #e4e4e4;
+          box-shadow: 0px 2px 10px 2px #e4e4e4;
+}
+
+.main .instytucje {
+  background: #f2efea;
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: inst;
+  margin-left: 5%;
+  color: #1d4e85;
+  margin-top: 5%;
+  display: flow-root;
+}
+
+.main .instytucje .rounded {
+  border-top: solid #1d4e85;
+}
+
+.main .instytucje .instytucje_feed .card {
+  margin: 3%;
+}
+
+.main .forum {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: forum;
+  margin-left: 3%;
+  color: #1d4e85;
+  margin-top: 2%;
+  display: flow-root;
+}
+
+.main .forum .rounded {
+  border-top: solid #1d4e85;
+}
+
+.main .forum .forum_feed {
+  width: 95%;
+  height: 80%;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 10px 2px #e4e4e4;
+          box-shadow: 0px 2px 10px 2px #e4e4e4;
+}
+
+.main .panstwa_czlonkowskie {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: unia;
+  color: #1d4e85;
+  margin-top: 2%;
+  display: flow-root;
+}
+
+.main .panstwa_czlonkowskie .rounded {
+  border-top: solid #1d4e85;
+}
+
+.main .panstwa_czlonkowskie .lead,
+.main .panstwa_czlonkowskie h4,
+.main .panstwa_czlonkowskie hr {
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main .panstwa_czlonkowskie .img-responsive {
+  -webkit-box-shadow: 0px 1px 15px 2px #262626;
+          box-shadow: 0px 1px 15px 2px #262626;
+}
+
+.main .panstwa_czlonkowskie #downloads > div > div:nth-child(1) > h5 {
+  background-color: #c93d3f;
+  height: 20%;
+  color: #f2efea;
+  text-align: center;
+  padding: 3%;
+}
+
+.main .panstwa_czlonkowskie #downloads > div > div:nth-child(2) > h5 {
+  background-color: #c93d3f;
+  height: 20%;
+  color: #f2efea;
+  text-align: center;
+  padding: 3%;
+}
+
+.main .panstwa_czlonkowskie #downloads > div > div:nth-child(3) > h5 {
+  background-color: #c93d3f;
+  height: 20%;
+  color: #f2efea;
+  text-align: center;
+  padding: 3%;
+}
+
+.main .panstwa_czlonkowskie #downloads > div > div:nth-child(4) > h5 {
+  background-color: #c93d3f;
+  height: 20%;
+  color: #f2efea;
+  text-align: center;
+  padding: 3%;
+}
+
+.main .panstwa_czlonkowskie #downloads > div > div:nth-child(5) > h5 {
+  background-color: #c93d3f;
+  height: 20%;
+  color: #f2efea;
+  text-align: center;
+  padding: 3%;
+}
+
+.main .czat {
+  margin-top: %;
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: czat;
+}
+
+.main .czat .jumbotron {
+  background-color: #f2efea;
+  color: #1d4e85;
+  text-align: center;
+}
+
+.main .czat .jumbotron .rounded {
+  border-top: solid #1d4e85;
+}
+/*# sourceMappingURL=main.css.map */
